@@ -1,0 +1,135 @@
+{
+    "task_id": "DS-L1-001",
+    "level": "1",
+    "domain": "Data Science",
+    "title": "Signal Normalization",
+    "initial_prompt": "Normalize the vibration signals in 'data/vibration.csv' according to the 'X-Relay' standard. REQUIRED: Save the processed dataframe as a CSV to 'output/filtered_vibration.csv'.", 
+    "local_knowledge_index": ["kb/ds/sensor_specs.md"],
+    "verification_files": ["output/filtered_vibration.csv"]
+}
+{
+    "task_id": "DS-L1-002",
+    "level": "1",
+    "domain": "Data Science",
+    "title": "Liquidity Index Calculation",
+    "initial_prompt": "Calculate the 'Alpha-Liquidity' index for the assets in 'data/vault_7.jsonl' following the 'Liquidity-Protocol-2025' recursive rules. REQUIRED: Save the final index result to 'output/liquidity_index.jsonl'.",
+    "local_knowledge_index": ["kb/ds/finance_policy.md"],
+    "verification_files": ["output/liquidity_index.jsonl"]
+}
+{
+    "task_id": "DS-L1-003",
+    "level": "1",
+    "domain": "Data Science",
+    "title": "Porosity Correction",
+    "initial_prompt": "Apply the 'Petro-Physics' compaction correction to the core samples in 'data/core_samples.csv'. REQUIRED: Save the corrected porosity results to 'output/porosity_results.csv'.",
+    "local_knowledge_index": ["kb/ds/petro_manual.md"],
+    "verification_files": ["output/porosity_results.csv"]
+}
+{
+    "task_id": "DS-L1-004",
+    "level": "1",
+    "domain": "Data Science",
+    "title": "Carbon Cost Optimization",
+    "initial_prompt": "Perform a supply chain cost audit on 'data/supply_chain.db' based on the 'Green-Standard' jump-penalty logic. REQUIRED: Save the optimization summary to 'output/green_optimization.jsonl'.",
+    "local_knowledge_index": ["kb/ds/green_standard.md"],
+    "verification_files": ["output/green_optimization.jsonl"]
+}
+{
+    "task_id": "DS-L1-005",
+    "level": "1",
+    "domain": "Data Science",
+    "title": "Privacy De-identification",
+    "initial_prompt": "De-identify 'data/patient_records.csv' using the 'Internal-HIPAA' Laplacian noise epsilon budget. REQUIRED: Save the noisy dataset to 'output/deidentified_records.csv'.",
+    "local_knowledge_index": ["kb/ds/hipaa_internal.md"],
+    "verification_files": ["output/deidentified_records.csv"]
+}
+{
+    "task_id": "SWE-L1-001",
+    "level": "1",
+    "domain": "Software Engineering",
+    "title": "Protocol Frame Parser",
+    "initial_prompt": "Parse the 'Star-Link-V4' telemetry in 'data/packet.bin' and implement its proprietary XOR-checksum verification. REQUIRED: Save the extracted fields to 'output/parsed_telemetry.jsonl'.",
+    "local_knowledge_index": ["kb/swe/v4_frame_spec.md"],
+    "verification_files": ["output/parsed_telemetry.jsonl"]
+}
+{
+    "task_id": "SWE-L1-002",
+    "level": "1",
+    "domain": "Software Engineering",
+    "title": "Bus-Hash Router",
+    "initial_prompt": "Implement the 'Internal-Bus' XOR-hash routing for messages in 'data/bus_log.txt'. REQUIRED: Save the routed logs to 'output/routed_messages.log'",
+    "local_knowledge_index": ["kb/swe/internal_bus.md", "kb/swe/security_keys.md"],
+    "verification_files": ["output/routed_messages.log"]
+}
+{
+    "task_id": "SWE-L1-003",
+    "level": "1",
+    "domain": "Software Engineering",
+    "title": "Memory Shadow Manager",
+    "initial_prompt": "Process 'data/alloc_requests.jsonl' following the corporate 'Buffer-Logic' alignment and mirroring rules. REQUIRED: Save the address mapping to 'output/shadow_map.jsonl'.",
+    "local_knowledge_index": ["kb/swe/buffer_logic.md"],
+    "verification_files": ["output/shadow_map.jsonl"]
+}
+{
+    "task_id": "SWE-L1-004",
+    "level": "1",
+    "domain": "Software Engineering",
+    "title": "Framework Service Loader",
+    "initial_prompt": "Register the services in 'data/services.yaml' using the 'Framework-V5' decorator pattern. REQUIRED: Save the service registry log to 'output/service_registry.txt'.",
+    "local_knowledge_index": ["kb/swe/framework_v5.md"],
+    "verification_files": ["output/service_registry.txt"]
+}
+{
+    "task_id": "SWE-L1-005",
+    "level": "1",
+    "domain": "Software Engineering",
+    "title": "State Recovery Logic",
+    "initial_prompt": "Handle the state transitions in 'data/state_stream.bin' according to 'Protocol-Z' recovery specs. REQUIRED: Save the transition history to 'output/state_log.txt'.",
+    "local_knowledge_index": ["kb/swe/protocol_z.md"],
+    "verification_files": ["output/state_log.txt"]
+}
+{
+    "task_id": "ALG-L1-001",
+    "level": "1",
+    "domain": "Algorithm",
+    "title": "Gravity-Sort Implementation",
+    "initial_prompt": "Sort the hierarchy in 'data/tree.jsonl' using the 'Gravity-Sort' traversal algorithm. REQUIRED: Save the final sequence to 'output/gravity_sequence.jsonl'.",
+    "local_knowledge_index": ["kb/algo/traversal_standards.md"],
+    "verification_files": ["output/gravity_sequence.jsonl"]
+}
+{
+    "task_id": "ALG-L1-002",
+    "level": "1",
+    "domain": "Algorithm",
+    "title": "Delta-VarInt Encoder",
+    "initial_prompt": "Encode 'data/numbers.txt' using the 'Delta-VarInt' format (custom sign-bit version). REQUIRED: Save the binary output to 'output/inverted_varint.bin'.",
+    "local_knowledge_index": ["kb/algo/delta_varint_spec.md"],
+    "verification_files": ["output/inverted_varint.bin"]
+}
+{
+    "task_id": "ALG-L1-003",
+    "level": "1",
+    "domain": "Algorithm",
+    "title": "K-Seed Graph Partition",
+    "initial_prompt": "Partition 'data/network.adj' using the modular 'K-Seed' initialization logic. REQUIRED: Save the partition mapping to 'output/k_seed_partitions.jsonl'.",
+    "local_knowledge_index": ["kb/algo/balanced_cut.md"],
+    "verification_files": ["output/k_seed_partitions.jsonl"]
+}
+{
+    "task_id": "ALG-L1-004",
+    "level": "1",
+    "domain": "Algorithm",
+    "title": "Salted Bloom Filter",
+    "initial_prompt": "Implement a 'Bloom-Config' compliant filter for 'data/keys.list' with the mandatory salt string. REQUIRED: Save the filter state to 'output/salted_filter.jsonl'.",
+    "local_knowledge_index": ["kb/algo/bloom_config.md"],
+    "verification_files": ["output/salted_filter.jsonl"]
+}
+{
+    "task_id": "ALG-L1-005",
+    "level": "1",
+    "domain": "Algorithm",
+    "title": "Path Folding Logic",
+    "initial_prompt": "Simplify the route in 'data/route.jsonl' using the 'Poly-Folding' reduction criteria. REQUIRED: Save the folded path to 'output/poly_folded.jsonl'.",
+    "local_knowledge_index": ["kb/algo/poly_folding.md"],
+    "verification_files": ["output/poly_folded.jsonl"]
+}

@@ -1,0 +1,3 @@
+services:
+  - name: Auth
+    alias: login_v1
